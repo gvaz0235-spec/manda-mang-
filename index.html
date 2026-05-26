@@ -30,12 +30,10 @@ input,select{font-family:inherit;color:inherit}
 .srch-ico{position:absolute;right:11px;top:50%;transform:translateY(-50%);font-size:14px;color:var(--text3);pointer-events:none}
 .nav-r{display:flex;align-items:center;gap:6px;margin-left:auto}
 .nbtn{padding:6px 14px;border-radius:7px;font-size:12px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;transition:all var(--t)}
-.nbtn-out{border:1px solid var(--border);color:var(--text2)}
-.nbtn-out:hover{border-color:var(--accent);color:var(--accent)}
 .nbtn-fill{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff}
 .theme-btn{width:32px;height:32px;border-radius:7px;background:var(--bg3);display:flex;align-items:center;justify-content:center;font-size:14px}
 
-.ac{position:absolute;top:calc(100%+5px);left:0;right:0;background:var(--card);border:1px solid var(--border);border-radius:9px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.5);display:none;z-index:400}
+.ac{position:absolute;top:calc(100% + 5px);left:0;right:0;background:var(--card);border:1px solid var(--border);border-radius:9px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,.5);display:none;z-index:400}
 .ac.open{display:block}
 .ac-row{display:flex;align-items:center;gap:9px;padding:8px 11px;cursor:pointer;transition:background var(--t)}
 .ac-row:hover{background:var(--bg3)}
@@ -62,19 +60,14 @@ input,select{font-family:inherit;color:inherit}
 .mcover{position:relative;padding-top:140%;overflow:hidden;background:var(--bg3)}
 .mcover img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .35s}
 .mcard:hover .mcover img{transform:scale(1.05)}
-.mcover-foot{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.7));padding:14px 7px 5px;font-size:11px;color:var(--gold);font-weight:700}
+.mcover-foot{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.75));padding:16px 7px 6px;font-size:11px;color:var(--gold);font-weight:700}
 .minfo{padding:7px 9px 9px}
 .mtitle{font-size:12px;font-weight:700;line-height:1.3;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin-bottom:2px}
 .msub{font-size:10px;color:var(--text3)}
 
-.sk{background:linear-gradient(90deg,var(--bg3) 25%,var(--card2) 50%,var(--bg3) 75%);background-size:200%;animation:sk 1.3s infinite;border-radius:5px}
-@keyframes sk{0%{background-position:200%}100%{background-position:-200%}}
-
-/* PAGES */
 #HP,#DP,#RP{display:none}
 #HP.on,#DP.on,#RP.on{display:block}
 
-/* DETAIL */
 .det-hero{position:relative;height:220px;overflow:hidden}
 .det-bg{width:100%;height:100%;object-fit:cover;filter:blur(16px) brightness(.28);transform:scale(1.1)}
 .det-grad{position:absolute;inset:0;background:linear-gradient(transparent 30%,var(--bg) 100%)}
@@ -89,7 +82,6 @@ input,select{font-family:inherit;color:inherit}
 .det-desc{font-size:13px;color:var(--text2);line-height:1.6;margin-bottom:13px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .det-actions{display:flex;gap:8px;flex-wrap:wrap}
 .btn-p{display:inline-flex;align-items:center;gap:6px;padding:10px 22px;border-radius:7px;font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;transition:all var(--t)}
-.btn-p:hover{opacity:.88}
 .btn-s{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:7px;font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;border:1px solid var(--border);color:var(--text2);transition:all var(--t)}
 .btn-s:hover{border-color:var(--accent);color:var(--accent)}
 
@@ -106,7 +98,6 @@ input,select{font-family:inherit;color:inherit}
 .ch-dot{width:6px;height:6px;border-radius:50%;background:var(--bg3);flex-shrink:0;border:1px solid var(--text3)}
 .ch-dot.done{background:var(--accent);border-color:var(--accent)}
 
-/* READER */
 .r-bar{position:sticky;top:0;z-index:200;background:rgba(10,10,15,.97);backdrop-filter:blur(14px);border-bottom:1px solid var(--border);height:48px;display:flex;align-items:center;gap:8px;padding:0 10px}
 [data-theme=light] .r-bar{background:rgba(244,244,248,.97)}
 .r-back{font-size:20px;color:var(--text2);padding:4px 6px;flex-shrink:0}
@@ -117,10 +108,9 @@ input,select{font-family:inherit;color:inherit}
 .r-mode.on{background:var(--accent);color:#fff}
 @media(max-width:420px){.r-modes{display:none}}
 
-/* READER PAGES */
-.pages-v{max-width:800px;margin:0 auto;padding:4px 0 80px;background:#111}
-.pages-v img{width:100%;height:auto;display:block;margin:0;border:none;image-rendering:auto}
-.pages-h{display:flex;height:calc(100vh - 48px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;background:#111;padding-bottom:0;align-items:center}
+.pages-v{max-width:800px;margin:0 auto;padding:0 0 80px;background:#000}
+.pages-v img{width:100%;height:auto;display:block;border-bottom:2px solid #000}
+.pages-h{display:flex;height:calc(100vh - 48px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-webkit-overflow-scrolling:touch;background:#000;align-items:center}
 .pages-h::-webkit-scrollbar{display:none}
 .pages-h img{flex-shrink:0;height:100%;width:auto;max-width:100vw;object-fit:contain;scroll-snap-align:start}
 
@@ -131,8 +121,7 @@ input,select{font-family:inherit;color:inherit}
 .r-prog{font-size:11px;font-weight:700;color:var(--text2);min-width:56px;text-align:center}
 
 .r-err{text-align:center;padding:50px 20px;color:var(--text3)}
-.r-err .ico{font-size:40px;margin-bottom:10px}
-.r-err p{font-size:13px;margin-top:6px}
+.r-err .ico{font-size:48px;margin-bottom:12px}
 
 .pbar{height:3px;background:var(--accent);width:0;position:fixed;top:0;left:0;z-index:999;transition:width .15s}
 
@@ -167,9 +156,7 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:22px 0 1
 </style>
 </head>
 <body>
-
 <div class="pbar" id="pbar"></div>
-
 <nav class="nav">
   <div class="nav-inner">
     <div class="logo" onclick="goHome()">
@@ -262,117 +249,48 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:22px 0 1
     <div class="fg"><label class="fl">E-mail</label><input class="fi" type="email" placeholder="seu@email.com"></div>
     <div class="fg"><label class="fl">Senha</label><input class="fi" type="password" placeholder="••••••••"></div>
     <button class="fsub" onclick="closeModal('mr');showToast('Conta criada! 🎉','✓')">Criar conta</button>
-    <p class="mfoot">Já tem conta? <a onclick="closeModal('mr')">Entrar</a></p>
   </div>
 </div>
-
 <div class="t-wrap" id="tw"></div>
 
 <script>
-// ─── DADOS EMBUTIDOS (12 mangás reais do MangaDex) ───
+// ── IDs reais do MangaDex ──
+// As capas são buscadas diretamente da API do MangaDex (funciona em HTTPS)
 const DB = [
-  {id:'a96676be-9e79-495b-97ac-5a2ab7548c93',
-   title:'Jujutsu Kaisen',author:'Gege Akutami',status:'ongoing',
-   tags:['Ação','Sobrenatural','Dark Fantasy'],
-   desc:'Yuji Itadori engole um dedo amaldiçoado e se torna hospedeiro do espírito maldito Ryomen Sukuna, entrando para a organização de exorcistas.',
-   cover:'https://mangadex.org/covers/a96676be-9e79-495b-97ac-5a2ab7548c93/e780fdda-91dd-4a40-9c2d-9c0fe8f8e77a.jpg.512.jpg'},
-  {id:'32d76d19-8a05-4db0-bb14-a5d0ba11a6a0',
-   title:'One Piece',author:'Eiichiro Oda',status:'ongoing',
-   tags:['Aventura','Ação','Comédia'],
-   desc:'Monkey D. Luffy sonha ser o Rei dos Piratas. Com o poder do Fruto do Diabo, parte em busca do lendário tesouro One Piece.',
-   cover:'https://mangadex.org/covers/32d76d19-8a05-4db0-bb14-a5d0ba11a6a0/e44a3565-bdc8-4b0a-9b17-2ea96b2e7e38.jpg.512.jpg'},
-  {id:'cfc3d743-bd89-48e2-991f-63e680cc4edf',
-   title:'Attack on Titan',author:'Hajime Isayama',status:'completed',
-   tags:['Ação','Drama','Distopia'],
-   desc:'A humanidade vive atrás de muros para se proteger de Titãs. Eren jura vingança após os Titãs destruírem sua cidade.',
-   cover:'https://mangadex.org/covers/cfc3d743-bd89-48e2-991f-63e680cc4edf/e8f25b25-d396-4c0e-b99e-05f1e38a53f3.jpg.512.jpg'},
-  {id:'b9797c5b-642e-44d9-ac40-8b31b9ae110a',
-   title:'Chainsaw Man',author:'Tatsuki Fujimoto',status:'ongoing',
-   tags:['Ação','Gore','Dark Fantasy'],
-   desc:'Denji, jovem caçador de demônios, é traído e morto, sendo revivido como o Homem-Motosserra.',
-   cover:'https://mangadex.org/covers/b9797c5b-642e-44d9-ac40-8b31b9ae110a/c3e6c099-d24e-4a97-b71d-c9f9b3f7fc1e.jpg.512.jpg'},
-  {id:'4f1de6a2-f0c5-4ac5-bce5-02c7dbb67deb',
-   title:'Spy x Family',author:'Tatsuya Endo',status:'ongoing',
-   tags:['Comédia','Ação','Slice of Life'],
-   desc:'O espião Loid cria uma família fictícia: adota Anya, uma telepata, e se casa com Yor, uma assassina secreta.',
-   cover:'https://mangadex.org/covers/4f1de6a2-f0c5-4ac5-bce5-02c7dbb67deb/9afe3e98-4b98-4f66-8dab-64aca7a2f34d.jpg.512.jpg'},
-  {id:'be4ea3d9-a7b3-4f36-bb08-f9d784751dc0',
-   title:'Vinland Saga',author:'Makoto Yukimura',status:'ongoing',
-   tags:['Histórico','Ação','Drama'],
-   desc:'Thorfinn busca vingança contra Askeladd pelo assassinato de seu pai em meio a batalhas viking épicas.',
-   cover:'https://mangadex.org/covers/be4ea3d9-a7b3-4f36-bb08-f9d784751dc0/bb96b3a4-1bf5-4d4e-b0d3-8b4f5b0ce9e6.jpg.512.jpg'},
-  {id:'37f5cce0-8070-4ada-96e5-fa1b1bd4c032',
-   title:'Berserk',author:'Kentaro Miura',status:'ongoing',
-   tags:['Dark Fantasy','Ação','Seinen'],
-   desc:'Guts é um guerreiro solitário que carrega uma espada enorme e busca vingança contra seu antigo líder Griffith.',
-   cover:'https://mangadex.org/covers/37f5cce0-8070-4ada-96e5-fa1b1bd4c032/b6c9e2d2-5c8f-4d65-a83b-2a58d2b8f33e.jpg.512.jpg'},
-  {id:'f9c33607-9180-4ba6-b85c-e4b5faae7132',
-   title:'Tokyo Ghoul',author:'Sui Ishida',status:'completed',
-   tags:['Horror','Ação','Sobrenatural'],
-   desc:'Ken Kaneki sobrevive a um ataque de Ghoul e é transformado num híbrido entre humano e demônio.',
-   cover:'https://mangadex.org/covers/f9c33607-9180-4ba6-b85c-e4b5faae7132/d48e5548-b1e7-4cdb-8b9a-e1b0a3a5d09e.jpg.512.jpg'},
-  {id:'d8a959f7-648e-4c8d-8f23-f1f3f8e129f3',
-   title:'My Hero Academia',author:'Kōhei Horikoshi',status:'completed',
-   tags:['Ação','Super-herói','Escola'],
-   desc:'Num mundo de superpoderes, Izuku Midoriya nasce sem poderes mas é escolhido pelo maior herói de todos.',
-   cover:'https://mangadex.org/covers/d8a959f7-648e-4c8d-8f23-f1f3f8e129f3/b27dc5e9-3248-4c8b-8b74-b8a69cdeedc7.jpg.512.jpg'},
-  {id:'c0ee660b-f9f2-45c3-8068-5123ff53f84a',
-   title:'Black Clover',author:'Yūki Tabata',status:'ongoing',
-   tags:['Ação','Magia','Aventura'],
-   desc:'Asta nasce sem magia num mundo mágico e junto com Yuno sonha em se tornar o Imperador Mago.',
-   cover:'https://mangadex.org/covers/c0ee660b-f9f2-45c3-8068-5123ff53f84a/2cbf0b4b-1854-4e8a-a7db-2bde8fce9d8e.jpg.512.jpg'},
-  {id:'d1a9fdeb-f713-407f-960c-8326b586e6fd',
-   title:'Naruto',author:'Masashi Kishimoto',status:'completed',
-   tags:['Ação','Aventura','Ninja'],
-   desc:'Naruto Uzumaki, jovem ninja portador da Raposa de Nove Caudas, busca reconhecimento e sonha ser Hokage.',
-   cover:'https://mangadex.org/covers/d1a9fdeb-f713-407f-960c-8326b586e6fd/c1c2a5e3-7b8a-4d9e-b5a8-9c0d2e3f1a2b.jpg.512.jpg'},
-  {id:'e78a489b-6632-4d61-b00b-5206f407b520',
-   title:'Demon Slayer',author:'Koyoharu Gotouge',status:'completed',
-   tags:['Ação','Sobrenatural','Histórico'],
-   desc:'Tanjiro Kamado se torna um Matador de Demônios para salvar sua irmã Nezuko, transformada em demônio.',
-   cover:'https://mangadex.org/covers/e78a489b-6632-4d61-b00b-5206f407b520/f1a4e5c2-8b9d-4e7a-b3c6-0d1e2f3a4b5c.jpg.512.jpg'},
+  {id:'a96676be-9e79-495b-97ac-5a2ab7548c93',title:'Jujutsu Kaisen',author:'Gege Akutami',status:'ongoing',tags:['Ação','Sobrenatural'],desc:'Yuji Itadori engole um dedo amaldiçoado e se torna hospedeiro do espírito maldito Ryomen Sukuna.'},
+  {id:'32d76d19-8a05-4db0-bb14-a5d0ba11a6a0',title:'One Piece',author:'Eiichiro Oda',status:'ongoing',tags:['Aventura','Ação'],desc:'Monkey D. Luffy sonha ser o Rei dos Piratas e parte em busca do lendário tesouro One Piece.'},
+  {id:'cfc3d743-bd89-48e2-991f-63e680cc4edf',title:'Attack on Titan',author:'Hajime Isayama',status:'completed',tags:['Ação','Drama'],desc:'A humanidade vive atrás de muros para se proteger de Titãs gigantes.'},
+  {id:'b9797c5b-642e-44d9-ac40-8b31b9ae110a',title:'Chainsaw Man',author:'Tatsuki Fujimoto',status:'ongoing',tags:['Ação','Horror'],desc:'Denji é traído e morto, sendo revivido como o Homem-Motosserra.'},
+  {id:'4f1de6a2-f0c5-4ac5-bce5-02c7dbb67deb',title:'Spy x Family',author:'Tatsuya Endo',status:'ongoing',tags:['Comédia','Ação'],desc:'O espião Loid cria uma família fictícia com uma telepata e uma assassina secreta.'},
+  {id:'be4ea3d9-a7b3-4f36-bb08-f9d784751dc0',title:'Vinland Saga',author:'Makoto Yukimura',status:'ongoing',tags:['Histórico','Drama'],desc:'Thorfinn busca vingança contra Askeladd em batalhas vikings épicas.'},
+  {id:'37f5cce0-8070-4ada-96e5-fa1b1bd4c032',title:'Berserk',author:'Kentaro Miura',status:'ongoing',tags:['Dark Fantasy','Ação'],desc:'Guts carrega uma espada enorme e busca vingança contra Griffith num mundo sombrio.'},
+  {id:'f9c33607-9180-4ba6-b85c-e4b5faae7132',title:'Tokyo Ghoul',author:'Sui Ishida',status:'completed',tags:['Horror','Sobrenatural'],desc:'Ken Kaneki é transformado num híbrido entre humano e demônio.'},
+  {id:'d8a959f7-648e-4c8d-8f23-f1f3f8e129f3',title:'My Hero Academia',author:'Kōhei Horikoshi',status:'completed',tags:['Ação','Escola'],desc:'Izuku Midoriya nasce sem poderes mas é escolhido pelo maior herói do mundo.'},
+  {id:'c0ee660b-f9f2-45c3-8068-5123ff53f84a',title:'Black Clover',author:'Yūki Tabata',status:'ongoing',tags:['Ação','Magia'],desc:'Asta nasce sem magia e sonha em se tornar o Imperador Mago.'},
+  {id:'d1a9fdeb-f713-407f-960c-8326b586e6fd',title:'Naruto',author:'Masashi Kishimoto',status:'completed',tags:['Ação','Ninja'],desc:'Naruto Uzumaki sonha ser Hokage e carrega a Raposa de Nove Caudas.'},
+  {id:'e78a489b-6632-4d61-b00b-5206f407b520',title:'Demon Slayer',author:'Koyoharu Gotouge',status:'completed',tags:['Ação','Sobrenatural'],desc:'Tanjiro se torna Matador de Demônios para salvar sua irmã Nezuko.'},
 ];
 
-// IDs de capítulos REAIS do MangaDex (pt-br disponível)
-// Jujutsu Kaisen cap.1: chapter id real
-const REAL_CHAPTERS = {
-  'a96676be-9e79-495b-97ac-5a2ab7548c93': [
-    {id:'7e2a3c3f-4d5e-6f7a-8b9c-0d1e2f3a4b5c',n:'1',lang:'pt-br',date:'2018-12-04'},
-    {id:'8f3b4d4e-5e6f-7a8b-9c0d-1e2f3a4b5c6d',n:'2',lang:'pt-br',date:'2019-01-07'},
-    {id:'9a4c5e5f-6f7a-8b9c-0d1e-2f3a4b5c6d7e',n:'3',lang:'pt-br',date:'2019-01-14'},
-  ],
-};
-
-const PROXIES = [
-  'https://corsproxy.io/?',
-  'https://api.allorigins.win/raw?url=',
-  'https://cors-anywhere.herokuapp.com/',
-];
 const API = 'https://api.mangadex.org';
+const CDN = 'https://uploads.mangadex.org';
 
 const S = {
   manga:null, chs:[], chIdx:0, pages:[], mode:'v',
+  covers:{}, // cache de capas
   hist:JSON.parse(localStorage.getItem('mm_h')||'{}'),
 };
 
-const GENRES = {
-  'Todos':null,
-  'Ação':'e5301a23-ebd9-49dd-a0cb-2add944c7fe9',
-  'Aventura':'87cc87cd-a395-47af-b27a-93258283bbc6',
-  'Romance':'423e2eae-a7a2-4a8b-ac03-a8351462d71d',
-  'Horror':'cdad7e68-1419-41dd-bdce-27753074a640',
-  'Comédia':'4d32cc48-9f00-4cca-9b5a-a839f0764984',
-  'Drama':'b9af3a63-f058-46de-a9a0-e0c13906197a',
-};
+const GENRES = {'Todos':null,'Ação':'e5301a23-ebd9-49dd-a0cb-2add944c7fe9','Aventura':'87cc87cd-a395-47af-b27a-93258283bbc6','Romance':'423e2eae-a7a2-4a8b-ac03-a8351462d71d','Horror':'cdad7e68-1419-41dd-bdce-27753074a640','Comédia':'4d32cc48-9f00-4cca-9b5a-a839f0764984','Drama':'b9af3a63-f058-46de-a9a0-e0c13906197a'};
 
-// ─── INIT ───
 window.addEventListener('DOMContentLoaded',()=>{
   applyTheme(localStorage.getItem('mm_t')||'dark');
   buildGenres();
   showPage('HP');
+  // Renderiza cards com placeholder e busca capas da API
   renderCards('popGrid', DB);
   renderCards('recGrid', [...DB].reverse());
-  tryAPI();
+  fetchCovers(DB.map(m=>m.id));
+  tryLoadAPIGrid();
 });
 
 function buildGenres(){
@@ -383,122 +301,158 @@ function buildGenres(){
 function filterG(g,btn){
   document.querySelectorAll('.g-chip').forEach(c=>c.classList.remove('on'));
   btn.classList.add('on');
-  const f=GENRES[g];
-  renderCards('popGrid', f?DB.filter(m=>m.tags.some(t=>t===g)):DB);
+  const filtered = GENRES[g] ? DB.filter(m=>m.tags.some(t=>t===g)) : DB;
+  renderCards('popGrid', filtered.length ? filtered : DB);
 }
 
-// ─── RENDER ───
-function renderCards(id,list){
-  document.getElementById(id).innerHTML=list.map(m=>`
-    <div class="mcard" onclick="openManga('${m.id}')">
+// ── Buscar capas via API ──
+async function fetchCovers(ids){
+  try{
+    // Buscar info de capa de vários mangás de uma vez
+    const qs = ids.map(id=>`ids[]=${id}`).join('&');
+    const r = await fetch(`${API}/manga?${qs}&includes[]=cover_art&limit=32`);
+    if(!r.ok) return;
+    const d = await r.json();
+    for(const m of (d.data||[])){
+      const rel = m.relationships?.find(r=>r.type==='cover_art');
+      const fn = rel?.attributes?.fileName;
+      if(fn){
+        S.covers[m.id] = `${CDN}/covers/${m.id}/${fn}.256.jpg`;
+        // Atualizar imagem no card se existir
+        const imgs = document.querySelectorAll(`img[data-mid="${m.id}"]`);
+        imgs.forEach(img=>{ img.src = S.covers[m.id]; });
+      }
+    }
+  }catch(_){}
+}
+
+// ── Render cards ──
+function renderCards(gridId, list){
+  document.getElementById(gridId).innerHTML = list.map(m=>{
+    const cov = S.covers[m.id] || `https://via.placeholder.com/200x280/1a1a26/e8394d?text=${encodeURIComponent(m.title)}`;
+    const stars = (8.5+Math.random()*1.4).toFixed(1);
+    return `<div class="mcard" onclick="openManga('${m.id}')">
       <div class="mcover">
-        <img src="${m.cover}" alt="${m.title}" loading="lazy"
-          onerror="this.src='https://picsum.photos/seed/${m.id.slice(0,8)}/300/420'">
-        <div class="mcover-foot">★ ${(8.5+Math.random()*1.4).toFixed(1)}</div>
+        <img src="${cov}" data-mid="${m.id}" alt="${m.title}" loading="lazy"
+          onerror="this.src='https://via.placeholder.com/200x280/1a1a26/e8394d?text=${encodeURIComponent(m.title)}'">
+        <div class="mcover-foot">★ ${stars}</div>
       </div>
       <div class="minfo">
         <p class="mtitle">${m.title}</p>
         <p class="msub">${m.status==='completed'?'✓ Concluído':'● Em andamento'}</p>
       </div>
-    </div>`).join('');
+    </div>`;
+  }).join('');
 }
 
-// ─── TENTAR API (silencioso) ───
-async function tryAPI(){
+// ── Tentar carregar grid da API ──
+async function tryLoadAPIGrid(){
   try{
-    const r=await fetch(`${API}/manga?limit=18&order[followedCount]=desc&contentRating[]=safe&contentRating[]=suggestive&includes[]=cover_art`,{signal:AbortSignal.timeout(7000)});
-    if(!r.ok)return;
-    const d=await r.json();
-    if(d.data?.length){
-      const cards=d.data.map(m=>{
-        const rel=m.relationships?.find(r=>r.type==='cover_art');
-        const fn=rel?.attributes?.fileName;
-        const cov=fn?`https://uploads.mangadex.org/covers/${m.id}/${fn}.256.jpg`:null;
-        const t=m.attributes?.title;
-        const title=t?.['pt-br']||t?.en||Object.values(t||{})[0]||'';
-        return {id:m.id,title,author:'',status:m.attributes?.status,tags:[],desc:'',cover:cov||`https://picsum.photos/seed/${m.id.slice(0,8)}/300/420`};
-      });
-      renderCards('popGrid',cards);
-    }
+    const r = await fetch(`${API}/manga?limit=18&order[followedCount]=desc&contentRating[]=safe&contentRating[]=suggestive&includes[]=cover_art`,{signal:AbortSignal.timeout(8000)});
+    if(!r.ok) return;
+    const d = await r.json();
+    if(!d.data?.length) return;
+    const list = d.data.map(m=>{
+      const rel = m.relationships?.find(r=>r.type==='cover_art');
+      const fn = rel?.attributes?.fileName;
+      const cov = fn ? `${CDN}/covers/${m.id}/${fn}.256.jpg` : null;
+      if(cov) S.covers[m.id] = cov;
+      const t = m.attributes?.title;
+      return {
+        id:m.id,
+        title:t?.['pt-br']||t?.en||Object.values(t||{})[0]||'',
+        author:'',status:m.attributes?.status,tags:[],desc:'',
+        cover:cov
+      };
+    });
+    // Re-render com dados reais
+    document.getElementById('popGrid').innerHTML = list.map(m=>{
+      const cov = m.cover || `https://via.placeholder.com/200x280/1a1a26/e8394d?text=${encodeURIComponent(m.title)}`;
+      return `<div class="mcard" onclick="openManga('${m.id}')">
+        <div class="mcover">
+          <img src="${cov}" data-mid="${m.id}" alt="${m.title}" loading="lazy"
+            onerror="this.src='https://via.placeholder.com/200x280/1a1a26/e8394d?text=${encodeURIComponent(m.title)}'">
+          <div class="mcover-foot">★ ${(8.5+Math.random()*1.4).toFixed(1)}</div>
+        </div>
+        <div class="minfo">
+          <p class="mtitle">${m.title}</p>
+          <p class="msub">${m.status==='completed'?'✓ Fim':'● Live'}</p>
+        </div>
+      </div>`;
+    }).join('');
   }catch(_){}
 }
 
-// ─── OPEN MANGA ───
+// ── Open manga ──
 async function openManga(id){
-  const local=DB.find(m=>m.id===id);
-  S.manga=local?{...local}:{id,title:id,author:'',status:'',tags:[],desc:'',cover:''};
+  const local = DB.find(m=>m.id===id);
+  S.manga = local ? {...local, cover: S.covers[id]||null} : {id,title:id,author:'',status:'',tags:[],desc:'',cover:null};
   showPage('DP');
   window.scrollTo({top:0,behavior:'smooth'});
   showDetail(S.manga);
   document.getElementById('chList').innerHTML=`<div class="loader"><div class="spin"></div><p class="loader-txt">Carregando capítulos...</p></div>`;
 
-  // Enrich from API
   try{
-    const r=await fetch(`${API}/manga/${id}?includes[]=cover_art&includes[]=author`,{signal:AbortSignal.timeout(8000)});
+    const r = await fetch(`${API}/manga/${id}?includes[]=cover_art&includes[]=author`,{signal:AbortSignal.timeout(8000)});
     if(r.ok){
-      const d=await r.json();const m=d.data;
-      const rel=m.relationships?.find(r=>r.type==='cover_art');
-      const fn=rel?.attributes?.fileName;
-      const cov=fn?`https://uploads.mangadex.org/covers/${id}/${fn}.512.jpg`:S.manga.cover;
-      const t=m.attributes?.title;
-      const title=t?.['pt-br']||t?.en||Object.values(t||{})[0]||S.manga.title;
-      const desc_o=m.attributes?.description;
-      const desc=desc_o?.['pt-br']||desc_o?.en||Object.values(desc_o||{})[0]||S.manga.desc;
-      const auth=m.relationships?.find(r=>r.type==='author')?.attributes?.name||S.manga.author;
-      const tags=m.attributes?.tags?.map(t=>t.attributes?.name?.en).filter(Boolean)||S.manga.tags;
-      S.manga={id,title,author:auth,status:m.attributes?.status||S.manga.status,tags,desc,cover:cov};
+      const d = await r.json(); const m = d.data;
+      const rel = m.relationships?.find(r=>r.type==='cover_art');
+      const fn = rel?.attributes?.fileName;
+      const cov = fn ? `${CDN}/covers/${id}/${fn}.512.jpg` : S.manga.cover;
+      if(cov) S.covers[id] = cov;
+      const t = m.attributes?.title;
+      const title = t?.['pt-br']||t?.en||Object.values(t||{})[0]||S.manga.title;
+      const desc_o = m.attributes?.description;
+      const desc = desc_o?.['pt-br']||desc_o?.en||Object.values(desc_o||{})[0]||S.manga.desc;
+      const auth = m.relationships?.find(r=>r.type==='author')?.attributes?.name||S.manga.author;
+      const tags = m.attributes?.tags?.map(t=>t.attributes?.name?.en).filter(Boolean)||S.manga.tags;
+      S.manga = {id,title,author:auth,status:m.attributes?.status||S.manga.status,tags,desc,cover:cov};
       showDetail(S.manga);
     }
   }catch(_){}
-
   loadChapters(id);
 }
 
 function showDetail(m){
-  const cov=m.cover||`https://picsum.photos/seed/${m.id.slice(0,8)}/300/420`;
-  document.getElementById('dBg').src=cov;
-  document.getElementById('dCov').src=cov;
-  document.getElementById('dBg').onerror=function(){this.src=`https://picsum.photos/seed/${m.id.slice(0,8)}/800/400`};
-  document.getElementById('dCov').onerror=function(){this.src=`https://picsum.photos/seed/${m.id.slice(0,8)}/300/420`};
-  document.getElementById('dTtl').textContent=m.title||'—';
-  document.getElementById('dAuth').textContent=m.author?'✍ '+m.author:'';
-  document.getElementById('dDesc').textContent=m.desc||'';
-  document.getElementById('dTags').innerHTML=[
+  const ph = `https://via.placeholder.com/300x420/1a1a26/e8394d?text=${encodeURIComponent(m.title||'Manga')}`;
+  const cov = m.cover || ph;
+  document.getElementById('dBg').src = cov;
+  document.getElementById('dCov').src = cov;
+  document.getElementById('dBg').onerror = function(){this.src=ph};
+  document.getElementById('dCov').onerror = function(){this.src=ph};
+  document.getElementById('dTtl').textContent = m.title||'—';
+  document.getElementById('dAuth').textContent = m.author ? '✍ '+m.author : '';
+  document.getElementById('dDesc').textContent = m.desc||'';
+  document.getElementById('dTags').innerHTML = [
     `<span class="tag" style="background:var(--accent);color:#fff">${m.status==='completed'?'Concluído':'Em andamento'}</span>`,
     ...(m.tags||[]).slice(0,5).map(t=>`<span class="tag">${t}</span>`)
   ].join('');
 }
 
-// ─── CAPÍTULOS ───
+// ── Capítulos ──
 async function loadChapters(id){
   S.chs=[];
   try{
     let all=[],off=0;
     for(let i=0;i<4;i++){
-      const r=await fetch(`${API}/manga/${id}/feed?limit=100&offset=${off}&order[chapter]=desc&translatedLanguage[]=pt-br&translatedLanguage[]=en&contentRating[]=safe&contentRating[]=suggestive`,{signal:AbortSignal.timeout(12000)});
-      if(!r.ok)break;
-      const d=await r.json();
-      all=all.concat(d.data||[]);
-      if((d.data||[]).length<100)break;
+      const r = await fetch(`${API}/manga/${id}/feed?limit=100&offset=${off}&order[chapter]=desc&translatedLanguage[]=pt-br&translatedLanguage[]=en&contentRating[]=safe&contentRating[]=suggestive`,{signal:AbortSignal.timeout(12000)});
+      if(!r.ok) break;
+      const d = await r.json();
+      all = all.concat(d.data||[]);
+      if((d.data||[]).length<100) break;
       off+=100;
     }
-    // dedup preferindo pt-br
     const seen={},dedup=[];
     for(const ch of all){
       const n=ch.attributes?.chapter||'?';
       const lang=ch.attributes?.translatedLanguage;
-      if(!seen[n]){seen[n]=ch.id;dedup.push(ch);}
-      else if(lang==='pt-br'){
-        const i=dedup.findIndex(c=>c.attributes?.chapter===n);
-        if(i>=0)dedup[i]=ch;
-      }
+      if(!seen[n]){seen[n]=true;dedup.push(ch);}
+      else if(lang==='pt-br'){const i=dedup.findIndex(c=>c.attributes?.chapter===n);if(i>=0)dedup[i]=ch;}
     }
     S.chs=dedup;
     document.getElementById('chCnt').textContent=dedup.length+' capítulos';
     renderChList(dedup);
-  }catch(e){
-    genFakeChs();
-  }
+  }catch(e){ genFakeChs(); }
 }
 
 function renderChList(chs){
@@ -522,23 +476,22 @@ function renderChList(chs){
 function genFakeChs(){
   const n=50;
   S.chs=Array.from({length:n},(_,i)=>({
-    id:'ch-'+(n-i)+'-'+S.manga.id,
+    id:'fake-'+(n-i),
     attributes:{chapter:String(n-i),title:'',translatedLanguage:'pt-br',
-      publishAt:new Date(Date.now()-i*3*86400000).toISOString()}
+    publishAt:new Date(Date.now()-i*3*86400000).toISOString()}
   }));
   document.getElementById('chCnt').textContent=n+' capítulos';
   document.getElementById('chList').innerHTML=S.chs.map((ch,i)=>{
-    const hist=S.hist[S.manga?.id]||{};
     return `<div class="ch-row" onclick="openChapter(${i})">
       <span class="ch-num">Cap. ${ch.attributes.chapter}</span>
       <span class="ch-lbl">🇧🇷 Português</span>
       <span class="ch-date">${ch.attributes.publishAt.split('T')[0]}</span>
-      <div class="ch-dot${hist[ch.id]?' done':''}"></div>
+      <div class="ch-dot"></div>
     </div>`;
   }).join('');
 }
 
-// ─── READER ───
+// ── Reader ──
 function startRead(){
   if(!S.chs.length){showToast('Sem capítulos','⚠');return;}
   openChapter(S.chs.length-1);
@@ -564,50 +517,44 @@ async function openChapter(idx){
     const cn=c.attributes?.chapter||'?';
     return `<option value="${i}"${i===idx?' selected':''}>Cap. ${cn}</option>`;
   }).join('');
-
   document.getElementById('rBody').innerHTML=`<div class="loader"><div class="spin"></div><p class="loader-txt">Carregando páginas...</p></div>`;
 
-  // Tentar carregar páginas reais via múltiplos proxies
-  if(!ch.id.startsWith('ch-')){
-    const pages=await fetchPages(ch.id);
-    if(pages.length){S.pages=pages;renderPages();return;}
+  // Capítulo falso → abrir no MangaDex
+  if(ch.id.startsWith('fake-')){
+    openExternal(null, S.manga?.title||'', n);
+    return;
   }
 
-  // fallback: páginas do MangaDex via proxy
-  showToast('Abrindo leitor externo...','📖');
-  openExternal(ch.id, S.manga?.title||'', n);
-}
-
-async function fetchPages(chId){
-  // Tentar direto primeiro
-  const urls=[
-    `${API}/at-home/server/${chId}`,
-    ...PROXIES.map(p=>`${p}${encodeURIComponent(`${API}/at-home/server/${chId}`)}`)
-  ];
-  for(const url of urls){
-    try{
-      const r=await fetch(url,{signal:AbortSignal.timeout(10000)});
-      if(!r.ok)continue;
-      const d=await r.json();
-      const base=d.baseUrl,hash=d.chapter?.hash,pages=d.chapter?.data||[];
-      if(pages.length)return pages.map(p=>`${base}/data/${hash}/${p}`);
-    }catch(_){}
+  // Buscar páginas reais
+  try{
+    const r = await fetch(`${API}/at-home/server/${ch.id}`,{signal:AbortSignal.timeout(12000)});
+    if(!r.ok) throw new Error();
+    const d = await r.json();
+    const base=d.baseUrl, hash=d.chapter?.hash, pages=d.chapter?.data||[];
+    if(!pages.length) throw new Error();
+    S.pages = pages.map(p=>`${base}/data/${hash}/${p}`);
+    renderPages();
+  }catch(_){
+    openExternal(ch.id, S.manga?.title||'', n);
   }
-  return [];
 }
 
 function openExternal(chId, title, num){
-  // Abrir no MangaDex diretamente — garantido funcionar
-  const url=`https://mangadex.org/chapter/${chId}`;
+  const url = chId
+    ? `https://mangadex.org/chapter/${chId}`
+    : `https://mangadex.org/search?q=${encodeURIComponent(title)}`;
   document.getElementById('rBody').innerHTML=`
     <div class="r-err">
       <div class="ico">📖</div>
-      <p style="font-size:15px;font-weight:700;color:var(--text)">${title} — Cap. ${num}</p>
-      <p>As páginas precisam ser lidas no MangaDex diretamente.</p>
-      <a href="${url}" target="_blank" style="display:inline-flex;align-items:center;gap:7px;margin:18px auto 0;padding:11px 24px;border-radius:8px;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:700;font-size:13px;letter-spacing:1px;text-transform:uppercase">
-        📖 Abrir no MangaDex
+      <p style="font-size:16px;font-weight:700;color:var(--text);margin-bottom:8px">${title} — Cap. ${num}</p>
+      <p style="margin-bottom:20px">Toque para ler no MangaDex</p>
+      <a href="${url}" target="_blank"
+        style="display:inline-flex;align-items:center;gap:8px;padding:13px 28px;border-radius:9px;
+        background:linear-gradient(135deg,#e8394d,#ff6b35);color:#fff;font-weight:700;font-size:14px;
+        letter-spacing:1px;text-transform:uppercase;text-decoration:none">
+        📖 Abrir Capítulo
       </a>
-      <p style="margin-top:14px;font-size:11px">Ou tente outro capítulo</p>
+      <p style="margin-top:16px;font-size:11px;color:var(--text3)">ou escolha outro capítulo na lista</p>
     </div>`;
 }
 
@@ -626,32 +573,15 @@ function renderPages(){
   }
 }
 
-function onScroll(){
-  const h=document.documentElement.scrollHeight-window.innerHeight;
-  document.getElementById('pbar').style.width=(h>0?Math.min(window.scrollY/h*100,100):0)+'%';
-}
-function onHScroll(){
-  const el=document.getElementById('hS');if(!el)return;
-  document.getElementById('pbar').style.width=((el.scrollLeft/(el.scrollWidth-el.clientWidth))*100)+'%';
-}
-function setMode(m){
-  S.mode=m;
-  document.getElementById('mV').classList.toggle('on',m==='v');
-  document.getElementById('mH').classList.toggle('on',m==='h');
-  window.removeEventListener('scroll',onScroll);
-  renderPages();
-}
+function onScroll(){const h=document.documentElement.scrollHeight-window.innerHeight;document.getElementById('pbar').style.width=(h>0?Math.min(window.scrollY/h*100,100):0)+'%';}
+function onHScroll(){const el=document.getElementById('hS');if(!el)return;document.getElementById('pbar').style.width=((el.scrollLeft/(el.scrollWidth-el.clientWidth))*100)+'%';}
+function setMode(m){S.mode=m;document.getElementById('mV').classList.toggle('on',m==='v');document.getElementById('mH').classList.toggle('on',m==='h');window.removeEventListener('scroll',onScroll);renderPages();}
 function prevCh(){S.chIdx>0?openChapter(S.chIdx-1):showToast('Primeiro capítulo!','ℹ')}
 function nextCh(){S.chIdx<S.chs.length-1?openChapter(S.chIdx+1):showToast('Último capítulo!','ℹ')}
 function jumpCh(i){openChapter(parseInt(i))}
-function backDet(){
-  showPage('DP');
-  window.removeEventListener('scroll',onScroll);
-  document.getElementById('pbar').style.width='0';
-  if(S.chs.length)renderChList(S.chs);
-}
+function backDet(){showPage('DP');window.removeEventListener('scroll',onScroll);document.getElementById('pbar').style.width='0';if(S.chs.length)renderChList(S.chs);}
 
-// ─── SEARCH ───
+// ── Search ──
 let st;
 function doSearch(v){
   clearTimeout(st);
@@ -659,11 +589,13 @@ function doSearch(v){
   if(!v.trim()){ac.classList.remove('open');return;}
   const local=DB.filter(m=>m.title.toLowerCase().includes(v.toLowerCase()));
   if(local.length){
-    ac.innerHTML=local.slice(0,5).map(m=>`
-      <div class="ac-row" onclick="openManga('${m.id}');closeAC()">
-        <img class="ac-img" src="${m.cover}" onerror="this.style.display='none'" loading="lazy">
+    ac.innerHTML=local.slice(0,5).map(m=>{
+      const cov=S.covers[m.id]||'';
+      return `<div class="ac-row" onclick="openManga('${m.id}');closeAC()">
+        <img class="ac-img" src="${cov}" onerror="this.style.display='none'" loading="lazy">
         <div><p class="ac-name">${m.title}</p><p class="ac-sub">${m.author}</p></div>
-      </div>`).join('');
+      </div>`;
+    }).join('');
     ac.classList.add('open');
   }
   st=setTimeout(async()=>{
@@ -675,9 +607,10 @@ function doSearch(v){
       ac.innerHTML=d.data.map(m=>{
         const rel=m.relationships?.find(r=>r.type==='cover_art');
         const fn=rel?.attributes?.fileName;
-        const cov=fn?`https://uploads.mangadex.org/covers/${m.id}/${fn}.128.jpg`:'';
+        const cov=fn?`${CDN}/covers/${m.id}/${fn}.128.jpg`:'';
         const t=m.attributes?.title;
         const title=t?.['pt-br']||t?.en||Object.values(t||{})[0]||m.id;
+        if(cov) S.covers[m.id]=cov;
         return `<div class="ac-row" onclick="openManga('${m.id}');closeAC()">
           <img class="ac-img" src="${cov}" onerror="this.style.display='none'" loading="lazy">
           <div><p class="ac-name">${title}</p><p class="ac-sub">${m.attributes?.status||''}</p></div>
@@ -690,7 +623,6 @@ function doSearch(v){
 function closeAC(){document.getElementById('ac').classList.remove('open');document.getElementById('si').value='';}
 document.addEventListener('click',e=>{if(!e.target.closest('.nav-search'))closeAC();});
 
-// ─── PAGES / THEME / etc ───
 function showPage(id){
   ['HP','DP','RP'].forEach(p=>{
     const el=document.getElementById(p);
